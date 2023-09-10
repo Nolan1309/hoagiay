@@ -9,7 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace TeduCoreApp
-{
+{ 
+
     public class Program
     {
         public static void Main(string[] args)

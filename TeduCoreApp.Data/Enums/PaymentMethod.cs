@@ -6,10 +6,10 @@ namespace TeduCoreApp.Data.Enums
 {
     public enum PaymentMethod
     {
-        CashOnDelivery,
-        OnlinBanking,
-        PaymentGateway,
-        Visa,
+        CashOnDelivery,  //Tiền mặt
+        OnlinBanking, //Banking
+        PaymentGateway,  
+        Visa,  //Visa card paypal
         MasterCard,
         PayPal,
         Atm

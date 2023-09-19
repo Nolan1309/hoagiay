@@ -14,13 +14,14 @@ using TeduCoreApp.Services;
 using TeduCoreApp.Data.EF;
 using TeduCoreApp.Data.Entities;
 using AutoMapper;
-using TeduCoreApp.Data.IRepository;
 using TeduCoreApp.Application.Interfaces;
 using TeduCoreApp.Data.EF.Repositories;
+using TeduCoreApp.Data.IRepositories;
 using TeduCoreApp.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using TeduCoreApp.Helpers;
+using TeduCoreApp.Data.IRepository;
 
 namespace TeduCoreApp
 {
@@ -28,7 +29,6 @@ namespace TeduCoreApp
     {
         public Startup(IConfiguration configuration)
         {
-            //Đọc setting
             Configuration = configuration;
         }
 
@@ -37,18 +37,13 @@ namespace TeduCoreApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //ApplicationDbContext mặc định nhưng ta sẽ dùng AppDbContext ở tầng EF do ta tạo ra.
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-                o=>o.MigrationsAssembly("TeduCoreApp.Data.EF")));
-            //Thêm 1 đối tượng O mới , có nghĩa là không dùng project hiện tại , dùng 1 project kết nối ngoài
+                o => o.MigrationsAssembly("TeduCoreApp.Data.EF")));
 
-            //Dùng Identity của AppUser
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
-
-
 
             // Configure Identity
             services.Configure<IdentityOptions>(options =>
@@ -67,12 +62,12 @@ namespace TeduCoreApp
                 // User settings
                 options.User.RequireUniqueEmail = true;
             });
-            // Add application services.
+
             services.AddAutoMapper();
+            // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
-       
             services.AddSingleton(Mapper.Configuration);
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
 
@@ -82,17 +77,21 @@ namespace TeduCoreApp
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            //Repositories
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+            //Serrvices
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
 
-            services.AddMvc().AddJsonOptions(option => option.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory )
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddFile("Logs/shophoa-{Date}.txt");
+            loggerFactory.AddFile("Logs/tedu-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -117,7 +116,7 @@ namespace TeduCoreApp
                 routes.MapRoute(name: "areaRoute",
                     template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
-           
+
         }
     }
 }

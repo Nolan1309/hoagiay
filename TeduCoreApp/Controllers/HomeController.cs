@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using TeduCoreApp.Extensions;
 using TeduCoreApp.Models;
 
 namespace TeduCoreApp.Controllers
@@ -14,6 +15,7 @@ namespace TeduCoreApp.Controllers
     {
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
 

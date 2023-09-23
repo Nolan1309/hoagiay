@@ -1,0 +1,394 @@
+2023-09-22T10:44:06.7679016+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:44:07.3606391+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-22T10:44:07.4207614+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-22T10:44:07.4404338+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2023-09-22T10:44:07.5209147+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2023-09-22T10:44:07.5277849+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2023-09-22T10:44:07.5369351+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2023-09-22T10:44:07.5487662+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2023-09-22T10:44:07.5589053+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2023-09-22T10:44:07.5664173+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2023-09-22T10:44:07.5735937+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-22T10:44:07.5797400+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-22T10:44:07.5874525+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-22T10:44:08.4424246+07:00 0HMTR3OMCFTBR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-22T10:44:08.9799034+07:00 0HMTR3OMCFTBR:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-22T10:44:08.9924500+07:00 0HMTR3OMCFTBR:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-22T10:44:09.0133354+07:00 0HMTR3OMCFTBR:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-22T10:44:09.0647159+07:00 0HMTR3OMCFTBR:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-22T10:44:09.0761337+07:00 0HMTR3OMCFTBR:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 130.8014ms (afa2e885)
+2023-09-22T10:44:09.1437485+07:00 0HMTR3OMCFTBR:00000001 [INF] Request finished in 769.5195ms 302  (791a596a)
+2023-09-22T10:44:09.1746018+07:00 0HMTR3OMCFTBR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-22T10:44:09.4866226+07:00 0HMTR3OMCFTBR:00000002 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:44:09.5322723+07:00 0HMTR3OMCFTBR:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-22T10:44:15.7483872+07:00 0HMTR3OMCFTBR:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-22T10:44:16.6856040+07:00 0HMTR3OMCFTBR:00000002 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 7439.8156ms (afa2e885)
+2023-09-22T10:44:16.7146767+07:00 0HMTR3OMCFTBR:00000002 [INF] Request finished in 7526.8472ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-22T10:44:16.7289349+07:00 0HMTR3OMCFTBR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2023-09-22T10:44:16.7305230+07:00 0HMTR3OMCFTBS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2023-09-22T10:44:16.7632523+07:00 0HMTR3OMCFTBS:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2023-09-22T10:44:16.7657289+07:00 0HMTR3OMCFTBR:00000003 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2023-09-22T10:44:16.7811858+07:00 0HMTR3OMCFTBR:00000003 [INF] Request finished in 50.2525ms 304 text/css (791a596a)
+2023-09-22T10:44:16.7840821+07:00 0HMTR3OMCFTBS:00000001 [INF] Request finished in 59.4162ms 304 application/javascript (791a596a)
+2023-09-22T10:44:34.9611993+07:00 0HMTR3OMCFTBR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/login   (ca22a1cb)
+2023-09-22T10:44:34.9738081+07:00 0HMTR3OMCFTBR:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:44:35.2533047+07:00 0HMTR3OMCFTBR:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2023-09-22T10:44:35.3212826+07:00 0HMTR3OMCFTBR:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 345.6761ms (afa2e885)
+2023-09-22T10:44:35.3271804+07:00 0HMTR3OMCFTBR:00000004 [INF] Request finished in 365.1236ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-22T10:44:35.3680757+07:00 0HMTR3OMCFTBR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2023-09-22T10:44:35.3723949+07:00 0HMTR3OMCFTBU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/animate.css/animate.css   (ca22a1cb)
+2023-09-22T10:44:35.3765170+07:00 0HMTR3OMCFTBT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2023-09-22T10:44:35.3831675+07:00 0HMTR3OMCFTBR:00000005 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2023-09-22T10:44:35.3916625+07:00 0HMTR3OMCFTBU:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2023-09-22T10:44:35.3946217+07:00 0HMTR3OMCFTBR:00000005 [INF] Request finished in 33.8526ms 304 text/css (791a596a)
+2023-09-22T10:44:35.4087817+07:00 0HMTR3OMCFTBU:00000001 [INF] Request finished in 34.4143ms 304 text/css (791a596a)
+2023-09-22T10:44:35.4197587+07:00 0HMTR3OMCFTBR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2023-09-22T10:44:35.4319918+07:00 0HMTR3OMCFTBU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2023-09-22T10:44:35.4335437+07:00 0HMTR3OMCFTBR:00000006 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2023-09-22T10:44:35.4362143+07:00 0HMTR3OMCFTBT:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2023-09-22T10:44:35.4494396+07:00 0HMTR3OMCFTBR:00000006 [INF] Request finished in 30.158ms 304 application/javascript (791a596a)
+2023-09-22T10:44:35.4517339+07:00 0HMTR3OMCFTBU:00000002 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2023-09-22T10:44:35.4650822+07:00 0HMTR3OMCFTBU:00000002 [INF] Request finished in 35.6385ms 304 application/javascript (791a596a)
+2023-09-22T10:44:35.4671410+07:00 0HMTR3OMCFTBR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/shared/shophoa.js   (ca22a1cb)
+2023-09-22T10:44:35.4756014+07:00 0HMTR3OMCFTBT:00000001 [INF] Request finished in 89.0113ms 304 text/css (791a596a)
+2023-09-22T10:44:35.4773719+07:00 0HMTR3OMCFTBR:00000007 [INF] The file "/app/shared/shophoa.js" was not modified (f1f8d725)
+2023-09-22T10:44:35.4861420+07:00 0HMTR3OMCFTBR:00000007 [INF] Request finished in 20.3878ms 304 application/javascript (791a596a)
+2023-09-22T10:44:35.4901712+07:00 0HMTR3OMCFTBT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/controllers/login/index.js   (ca22a1cb)
+2023-09-22T10:44:35.4929209+07:00 0HMTR3OMCFTC0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2023-09-22T10:44:35.5037798+07:00 0HMTR3OMCFTC0:00000001 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2023-09-22T10:44:35.5086371+07:00 0HMTR3OMCFTBT:00000002 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2023-09-22T10:44:35.5191884+07:00 0HMTR3OMCFTC0:00000001 [INF] Request finished in 141.011ms 304 application/javascript (791a596a)
+2023-09-22T10:44:35.5233953+07:00 0HMTR3OMCFTBT:00000002 [INF] Request finished in 29.8672ms 304 application/javascript (791a596a)
+2023-09-22T10:44:35.5329899+07:00 0HMTR3OMCFTBV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/css/custom.css   (ca22a1cb)
+2023-09-22T10:44:35.5351108+07:00 0HMTR3OMCFTBS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/nprogress/nprogress.css   (ca22a1cb)
+2023-09-22T10:44:35.5440618+07:00 0HMTR3OMCFTBV:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2023-09-22T10:44:35.5463752+07:00 0HMTR3OMCFTBS:00000002 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2023-09-22T10:44:35.5605983+07:00 0HMTR3OMCFTBV:00000001 [INF] Request finished in 180.8754ms 304 text/css (791a596a)
+2023-09-22T10:44:35.5630695+07:00 0HMTR3OMCFTBS:00000002 [INF] Request finished in 198.885ms 304 text/css (791a596a)
+2023-09-22T10:44:35.6157665+07:00 0HMTR3OMCFTBS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2023-09-22T10:44:35.6236842+07:00 0HMTR3OMCFTBS:00000003 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2023-09-22T10:44:35.6310704+07:00 0HMTR3OMCFTBS:00000003 [INF] Request finished in 20.6355ms 304 font/woff2 (791a596a)
+2023-09-22T10:44:37.7993054+07:00 0HMTR3OMCFTBS:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2023-09-22T10:44:37.9024279+07:00 0HMTR3OMCFTBS:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:44:37.9270623+07:00 0HMTR3OMCFTBS:00000004 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:44:38.0642642+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed DbCommand ("53"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-09-22T10:44:38.3111393+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2023-09-22T10:44:38.3803324+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2023-09-22T10:44:38.4009520+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-09-22T10:44:38.4306689+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2023-09-22T10:44:38.4488834+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2023-09-22T10:44:38.4744814+07:00 0HMTR3OMCFTBS:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2023-09-22T10:44:38.4832957+07:00 0HMTR3OMCFTBS:00000004 [INF] User logged in. (fdce0db4)
+2023-09-22T10:44:38.5081333+07:00 0HMTR3OMCFTBS:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2023-09-22T10:44:38.6419199+07:00 0HMTR3OMCFTBS:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 824.9923ms (afa2e885)
+2023-09-22T10:44:38.6565449+07:00 0HMTR3OMCFTBS:00000004 [INF] Request finished in 858.6376ms 200 application/json; charset=utf-8 (791a596a)
+2023-09-22T10:44:38.6686903+07:00 0HMTR3OMCFTBS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Home/Index   (ca22a1cb)
+2023-09-22T10:44:38.6886700+07:00 0HMTR3OMCFTBS:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:38.6979842+07:00 0HMTR3OMCFTBS:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-22T10:44:38.7021728+07:00 0HMTR3OMCFTBS:00000005 [INF] Executing action method "TeduCoreApp.Area.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:44:38.8455521+07:00 0HMTR3OMCFTBS:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2023-09-22T10:44:39.0558258+07:00 0HMTR3OMCFTBS:00000005 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:44:39.0931461+07:00 0HMTR3OMCFTBS:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2023-09-22T10:44:39.4041205+07:00 0HMTR3OMCFTBS:00000005 [INF] Executed action "TeduCoreApp.Area.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 687.7509ms (afa2e885)
+2023-09-22T10:44:39.4391030+07:00 0HMTR3OMCFTBT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/images/img.jpg   (ca22a1cb)
+2023-09-22T10:44:39.4460875+07:00 0HMTR3OMCFTC0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2023-09-22T10:44:39.4603624+07:00 0HMTR3OMCFTBS:00000005 [INF] Request finished in 761.7788ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-22T10:44:39.4767729+07:00 0HMTR3OMCFTBU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/mustache/mustache.js   (ca22a1cb)
+2023-09-22T10:44:39.4860014+07:00 0HMTR3OMCFTC0:00000002 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.5029945+07:00 0HMTR3OMCFTBS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/nprogress/nprogress.js   (ca22a1cb)
+2023-09-22T10:44:39.5088338+07:00 0HMTR3OMCFTC0:00000002 [INF] Request finished in 82.0163ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.5135391+07:00 0HMTR3OMCFTBU:00000003 [INF] The file "/lib/mustache/mustache.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.5248756+07:00 0HMTR3OMCFTBS:00000006 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.5397392+07:00 0HMTR3OMCFTC0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2023-09-22T10:44:39.5415334+07:00 0HMTR3OMCFTBU:00000003 [INF] Request finished in 74.4045ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.5451235+07:00 0HMTR3OMCFTBS:00000006 [INF] Request finished in 57.4032ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.5527924+07:00 0HMTR3OMCFTC0:00000003 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.5676630+07:00 0HMTR3OMCFTBS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2023-09-22T10:44:39.5712477+07:00 0HMTR3OMCFTC0:00000003 [INF] Request finished in 34.922ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.5782508+07:00 0HMTR3OMCFTBU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/moment/moment.js   (ca22a1cb)
+2023-09-22T10:44:39.5891663+07:00 0HMTR3OMCFTBS:00000007 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.6092870+07:00 0HMTR3OMCFTBU:00000004 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.6137460+07:00 0HMTR3OMCFTBS:00000007 [INF] Request finished in 39.5749ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.6197402+07:00 0HMTR3OMCFTC0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootbox/bootbox.js   (ca22a1cb)
+2023-09-22T10:44:39.6292865+07:00 0HMTR3OMCFTBT:00000003 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2023-09-22T10:44:39.6373185+07:00 0HMTR3OMCFTBU:00000004 [INF] Request finished in 60.0465ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.6411887+07:00 0HMTR3OMCFTBS:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/shared/tedu.js   (ca22a1cb)
+2023-09-22T10:44:39.6439476+07:00 0HMTR3OMCFTC0:00000004 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.6646496+07:00 0HMTR3OMCFTC0:00000004 [INF] Request finished in 59.0743ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.6663619+07:00 0HMTR3OMCFTBS:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:39.6703463+07:00 0HMTR3OMCFTBU:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin-side/js/custom.js   (ca22a1cb)
+2023-09-22T10:44:39.6844256+07:00 0HMTR3OMCFTBU:00000005 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2023-09-22T10:44:39.6995018+07:00 0HMTR3OMCFTBT:00000003 [INF] Request finished in 228.801ms 304 image/jpeg (791a596a)
+2023-09-22T10:44:39.7039810+07:00 0HMTR3OMCFTBS:00000008 [INF] Request finished in 54.6599ms 404  (791a596a)
+2023-09-22T10:44:39.7065860+07:00 0HMTR3OMCFTBU:00000005 [INF] Request finished in 35.9583ms 304 application/javascript (791a596a)
+2023-09-22T10:44:39.7236318+07:00 0HMTR3OMCFTBV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2023-09-22T10:44:39.7247898+07:00 0HMTR3OMCFTBR:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2023-09-22T10:44:39.7306095+07:00 0HMTR3OMCFTBV:00000002 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2023-09-22T10:44:39.7376190+07:00 0HMTR3OMCFTBR:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:39.7404502+07:00 0HMTR3OMCFTBV:00000002 [INF] Request finished in 329.9352ms 304 text/css (791a596a)
+2023-09-22T10:44:39.7526596+07:00 0HMTR3OMCFTBR:00000008 [INF] Request finished in 306.8841ms 404  (791a596a)
+2023-09-22T10:44:39.8457550+07:00 0HMTR3OMCFTBR:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2023-09-22T10:44:39.8552407+07:00 0HMTR3OMCFTBR:00000009 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2023-09-22T10:44:39.8621820+07:00 0HMTR3OMCFTBR:00000009 [INF] Request finished in 24.6779ms 304 font/woff2 (791a596a)
+2023-09-22T10:44:44.4581047+07:00 0HMTR3OMCFTBR:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/product/index   (ca22a1cb)
+2023-09-22T10:44:44.4651027+07:00 0HMTR3OMCFTBR:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:44.4704982+07:00 0HMTR3OMCFTBR:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-22T10:44:44.4785430+07:00 0HMTR3OMCFTBR:0000000A [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:44:44.5932123+07:00 0HMTR3OMCFTBR:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2023-09-22T10:44:44.6010112+07:00 0HMTR3OMCFTBR:0000000A [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:44:44.6073820+07:00 0HMTR3OMCFTBR:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2023-09-22T10:44:44.6228997+07:00 0HMTR3OMCFTBR:0000000A [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductController.Index (TeduCoreApp)" in 146.6827ms (afa2e885)
+2023-09-22T10:44:44.6294661+07:00 0HMTR3OMCFTBR:0000000A [INF] Request finished in 170.5941ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-22T10:44:44.6592767+07:00 0HMTR3OMCFTBR:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2023-09-22T10:44:44.6657056+07:00 0HMTR3OMCFTBV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/shared/tedu.js   (ca22a1cb)
+2023-09-22T10:44:44.6747531+07:00 0HMTR3OMCFTBR:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:44.6833461+07:00 0HMTR3OMCFTBV:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:44.6873447+07:00 0HMTR3OMCFTBU:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/controllers/product/index.js   (ca22a1cb)
+2023-09-22T10:44:44.6890443+07:00 0HMTR3OMCFTBR:0000000B [INF] Request finished in 37.3148ms 404  (791a596a)
+2023-09-22T10:44:44.6979509+07:00 0HMTR3OMCFTBV:00000003 [INF] Request finished in 39.9878ms 404  (791a596a)
+2023-09-22T10:44:44.7055984+07:00 0HMTR3OMCFTBU:00000006 [INF] The file "/app/controllers/product/index.js" was not modified (f1f8d725)
+2023-09-22T10:44:44.7150718+07:00 0HMTR3OMCFTBU:00000006 [INF] Request finished in 45.2954ms 304 application/javascript (791a596a)
+2023-09-22T10:44:44.7449506+07:00 0HMTR3OMCFTBU:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/product/GetAll   (ca22a1cb)
+2023-09-22T10:44:44.7506586+07:00 0HMTR3OMCFTBU:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:44:44.7570084+07:00 0HMTR3OMCFTBU:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-22T10:44:44.7620290+07:00 0HMTR3OMCFTBU:00000007 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductController.GetAll (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:44:44.7706458+07:00 0HMTR3OMCFTBU:00000007 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:44:44.8576215+07:00 0HMTR3OMCFTBU:00000007 [WRN] The Include operation for navigation '"[x].ProductCategory"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2023-09-22T10:44:44.9277089+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]" (0723d8ff)
+2023-09-22T10:44:44.9607698+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:44.9676785+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:44.9764326+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:44.9813961+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:44.9855453+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:44.9943354+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0008943+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0084998+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0159898+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0262906+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0346600+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0452311+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0538039+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0617454+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0685392+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0782744+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0841901+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.0951529+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.1028190+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.1120534+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2023-09-22T10:44:45.1213426+07:00 0HMTR3OMCFTBU:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2023-09-22T10:44:45.1770123+07:00 0HMTR3OMCFTBU:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductController.GetAll (TeduCoreApp)" in 416.0812ms (afa2e885)
+2023-09-22T10:44:45.1838408+07:00 0HMTR3OMCFTBU:00000007 [INF] Request finished in 440.1368ms 200 application/json; charset=utf-8 (791a596a)
+2023-09-22T10:46:01.9266942+07:00 0HMTR3OMCFTBU:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/index   (ca22a1cb)
+2023-09-22T10:46:01.9333335+07:00 0HMTR3OMCFTBU:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:01.9410742+07:00 0HMTR3OMCFTBU:00000008 [INF] Request finished in 12.0642ms 404  (791a596a)
+2023-09-22T10:46:09.2004659+07:00 0HMTR3OMCFTBU:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/   (ca22a1cb)
+2023-09-22T10:46:09.2059582+07:00 0HMTR3OMCFTBU:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:09.2105613+07:00 0HMTR3OMCFTBU:00000009 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:46:09.2158434+07:00 0HMTR3OMCFTBU:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2023-09-22T10:46:09.2318901+07:00 0HMTR3OMCFTBU:00000009 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 16.9109ms (afa2e885)
+2023-09-22T10:46:09.2397064+07:00 0HMTR3OMCFTBU:00000009 [INF] Request finished in 38.0222ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-22T10:46:11.2476324+07:00 0HMTR3OMCFTBU:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2023-09-22T10:46:11.2539050+07:00 0HMTR3OMCFTBU:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:11.2620477+07:00 0HMTR3OMCFTBU:0000000A [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:46:11.2665995+07:00 0HMTR3OMCFTBU:0000000A [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:46:11.2743733+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-09-22T10:46:11.2957682+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2023-09-22T10:46:11.3040808+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2023-09-22T10:46:11.3122493+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-09-22T10:46:11.3167433+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2023-09-22T10:46:11.3218833+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2023-09-22T10:46:11.3290814+07:00 0HMTR3OMCFTBU:0000000A [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2023-09-22T10:46:11.3335465+07:00 0HMTR3OMCFTBU:0000000A [INF] User logged in. (fdce0db4)
+2023-09-22T10:46:11.3368686+07:00 0HMTR3OMCFTBU:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2023-09-22T10:46:11.3407717+07:00 0HMTR3OMCFTBU:0000000A [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 81.9841ms (afa2e885)
+2023-09-22T10:46:11.3450458+07:00 0HMTR3OMCFTBU:0000000A [INF] Request finished in 99.1083ms 200 application/json; charset=utf-8 (791a596a)
+2023-09-22T10:46:11.3551911+07:00 0HMTR3OMCFTBU:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Home/Index   (ca22a1cb)
+2023-09-22T10:46:11.3599018+07:00 0HMTR3OMCFTBU:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:11.3632369+07:00 0HMTR3OMCFTBU:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-22T10:46:11.3669489+07:00 0HMTR3OMCFTBU:0000000B [INF] Executing action method "TeduCoreApp.Area.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:46:11.3733420+07:00 0HMTR3OMCFTBU:0000000B [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2023-09-22T10:46:11.3771976+07:00 0HMTR3OMCFTBU:0000000B [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-22T10:46:11.3856723+07:00 0HMTR3OMCFTBU:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2023-09-22T10:46:11.3917119+07:00 0HMTR3OMCFTBU:0000000B [INF] Executed action "TeduCoreApp.Area.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 26.6701ms (afa2e885)
+2023-09-22T10:46:11.3997400+07:00 0HMTR3OMCFTBU:0000000B [INF] Request finished in 43.5775ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-22T10:46:11.4206917+07:00 0HMTR3OMCFTBU:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2023-09-22T10:46:11.4228825+07:00 0HMTR3OMCFTBV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/shared/tedu.js   (ca22a1cb)
+2023-09-22T10:46:11.4338494+07:00 0HMTR3OMCFTBV:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:11.4378221+07:00 0HMTR3OMCFTBU:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:11.4450484+07:00 0HMTR3OMCFTBV:00000004 [INF] Request finished in 23.7475ms 404  (791a596a)
+2023-09-22T10:46:11.4478036+07:00 0HMTR3OMCFTBU:0000000C [INF] Request finished in 31.1063ms 404  (791a596a)
+2023-09-22T10:46:17.0298110+07:00 0HMTR3OMCFTBU:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:56852/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2023-09-22T10:46:17.0352192+07:00 0HMTR3OMCFTBU:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-22T10:46:17.0423402+07:00 0HMTR3OMCFTBU:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-22T10:46:17.0476915+07:00 0HMTR3OMCFTBU:0000000D [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.AccountController.Logout (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:46:17.0602340+07:00 0HMTR3OMCFTBU:0000000D [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2023-09-22T10:46:17.0645724+07:00 0HMTR3OMCFTBU:0000000D [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-22T10:46:17.0693194+07:00 0HMTR3OMCFTBU:0000000D [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2023-09-22T10:46:17.0767822+07:00 0HMTR3OMCFTBU:0000000D [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2023-09-22T10:46:17.0808666+07:00 0HMTR3OMCFTBU:0000000D [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.AccountController.Logout (TeduCoreApp)" in 39.641ms (afa2e885)
+2023-09-22T10:46:17.0865891+07:00 0HMTR3OMCFTBU:0000000D [INF] Request finished in 56.3115ms 302  (791a596a)
+2023-09-22T10:46:17.0974467+07:00 0HMTR3OMCFTBU:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Login/Index   (ca22a1cb)
+2023-09-22T10:46:17.1030734+07:00 0HMTR3OMCFTBU:0000000E [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-22T10:46:17.1084867+07:00 0HMTR3OMCFTBU:0000000E [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2023-09-22T10:46:17.1141929+07:00 0HMTR3OMCFTBU:0000000E [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 11.2536ms (afa2e885)
+2023-09-22T10:46:17.1194193+07:00 0HMTR3OMCFTBU:0000000E [INF] Request finished in 22.9739ms 200 text/html; charset=utf-8 (791a596a)

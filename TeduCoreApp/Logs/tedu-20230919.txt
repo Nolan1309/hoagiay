@@ -262,3 +262,448 @@ FROM [Functions] AS [dto]" (0723d8ff)
 2023-09-19T23:20:21.0277905+07:00 0HMTP5H25SQPC:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
 2023-09-19T23:20:21.0325453+07:00 0HMTP5H25SQPC:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 10.4222ms (afa2e885)
 2023-09-19T23:20:21.0382691+07:00 0HMTP5H25SQPC:00000003 [INF] Request finished in 19.5067ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:14.8638422+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:38:15.5501622+07:00  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:38:15.6206048+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:38:15.6463085+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2023-09-19T23:38:15.7430553+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2023-09-19T23:38:15.7507944+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2023-09-19T23:38:15.8602227+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2023-09-19T23:38:15.9172651+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2023-09-19T23:38:15.9276253+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2023-09-19T23:38:15.9412752+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2023-09-19T23:38:15.9785482+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:38:15.9917784+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:38:15.9972610+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:38:16.8868949+07:00 0HMTP5R9FOGIG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:38:17.4962429+07:00 0HMTP5R9FOGIG:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:17.5072756+07:00 0HMTP5R9FOGIG:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:17.5226869+07:00 0HMTP5R9FOGIG:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:17.5547598+07:00 0HMTP5R9FOGIG:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:17.5620518+07:00 0HMTP5R9FOGIG:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 108.4126ms (afa2e885)
+2023-09-19T23:38:17.6329982+07:00 0HMTP5R9FOGIG:00000001 [INF] Request finished in 816.9503ms 302  (791a596a)
+2023-09-19T23:38:17.6612508+07:00 0HMTP5R9FOGIG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:38:17.9545111+07:00 0HMTP5R9FOGIG:00000002 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:18.0096735+07:00 0HMTP5R9FOGIG:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:24.1898200+07:00 0HMTP5R9FOGIG:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:25.2576780+07:00 0HMTP5R9FOGIG:00000002 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 7496.6022ms (afa2e885)
+2023-09-19T23:38:25.2861015+07:00 0HMTP5R9FOGIG:00000002 [INF] Request finished in 7613.017ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:33.2527109+07:00 0HMTP5R9FOGIG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin   (ca22a1cb)
+2023-09-19T23:38:33.2667700+07:00 0HMTP5R9FOGIG:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:33.2721374+07:00 0HMTP5R9FOGIG:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:33.2781544+07:00 0HMTP5R9FOGIG:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:33.2850587+07:00 0HMTP5R9FOGIG:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:33.2888287+07:00 0HMTP5R9FOGIG:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 25.443ms (afa2e885)
+2023-09-19T23:38:33.2965442+07:00 0HMTP5R9FOGIG:00000003 [INF] Request finished in 42.6635ms 302  (791a596a)
+2023-09-19T23:38:33.3066783+07:00 0HMTP5R9FOGIG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2Fadmin   (ca22a1cb)
+2023-09-19T23:38:33.3183979+07:00 0HMTP5R9FOGIG:00000004 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/admin"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:33.3241377+07:00 0HMTP5R9FOGIG:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:33.3319449+07:00 0HMTP5R9FOGIG:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:33.3429650+07:00 0HMTP5R9FOGIG:00000004 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 27.7543ms (afa2e885)
+2023-09-19T23:38:33.3491133+07:00 0HMTP5R9FOGIG:00000004 [INF] Request finished in 42.545ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:38.1736009+07:00 0HMTP5R9FOGIG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin   (ca22a1cb)
+2023-09-19T23:38:38.1801617+07:00 0HMTP5R9FOGIG:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:38.1865986+07:00 0HMTP5R9FOGIG:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:38.1931188+07:00 0HMTP5R9FOGIG:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:38.1984566+07:00 0HMTP5R9FOGIG:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:38.2052116+07:00 0HMTP5R9FOGIG:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 24.6215ms (afa2e885)
+2023-09-19T23:38:38.2112475+07:00 0HMTP5R9FOGIG:00000005 [INF] Request finished in 37.5397ms 302  (791a596a)
+2023-09-19T23:38:38.2214036+07:00 0HMTP5R9FOGIG:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2Fadmin   (ca22a1cb)
+2023-09-19T23:38:38.2265014+07:00 0HMTP5R9FOGIG:00000006 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/admin"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:38.2307385+07:00 0HMTP5R9FOGIG:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:38.2360860+07:00 0HMTP5R9FOGIG:00000006 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:38.2443215+07:00 0HMTP5R9FOGIG:00000006 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 16.284ms (afa2e885)
+2023-09-19T23:38:38.2528104+07:00 0HMTP5R9FOGIG:00000006 [INF] Request finished in 29.6971ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:44.6425980+07:00 0HMTP5R9FOGIG:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin   (ca22a1cb)
+2023-09-19T23:38:44.6483900+07:00 0HMTP5R9FOGIG:00000007 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:44.6543985+07:00 0HMTP5R9FOGIG:00000007 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:44.6606517+07:00 0HMTP5R9FOGIG:00000007 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:44.6647601+07:00 0HMTP5R9FOGIG:00000007 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:44.6703673+07:00 0HMTP5R9FOGIG:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 21.9561ms (afa2e885)
+2023-09-19T23:38:44.6766176+07:00 0HMTP5R9FOGIG:00000007 [INF] Request finished in 33.5246ms 302  (791a596a)
+2023-09-19T23:38:44.6852181+07:00 0HMTP5R9FOGIG:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2Fadmin   (ca22a1cb)
+2023-09-19T23:38:44.6907537+07:00 0HMTP5R9FOGIG:00000008 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/admin"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:44.6966381+07:00 0HMTP5R9FOGIG:00000008 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:44.7034986+07:00 0HMTP5R9FOGIG:00000008 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:44.7108449+07:00 0HMTP5R9FOGIG:00000008 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 19.4164ms (afa2e885)
+2023-09-19T23:38:44.7205336+07:00 0HMTP5R9FOGIG:00000008 [INF] Request finished in 31.2907ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:55.9811750+07:00 0HMTP5R9FOGIG:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:38:55.9875373+07:00 0HMTP5R9FOGIG:00000009 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:55.9930347+07:00 0HMTP5R9FOGIG:00000009 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:55.9969527+07:00 0HMTP5R9FOGIG:00000009 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:56.0019568+07:00 0HMTP5R9FOGIG:00000009 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:56.0065389+07:00 0HMTP5R9FOGIG:00000009 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 20.5245ms (afa2e885)
+2023-09-19T23:38:56.0109148+07:00 0HMTP5R9FOGIG:00000009 [INF] Request finished in 33.2428ms 302  (791a596a)
+2023-09-19T23:38:56.0219996+07:00 0HMTP5R9FOGIG:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:38:56.0263833+07:00 0HMTP5R9FOGIG:0000000A [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:56.0310370+07:00 0HMTP5R9FOGIG:0000000A [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:56.0356970+07:00 0HMTP5R9FOGIG:0000000A [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:56.0421050+07:00 0HMTP5R9FOGIG:0000000A [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 14.8974ms (afa2e885)
+2023-09-19T23:38:56.0493212+07:00 0HMTP5R9FOGIG:0000000A [INF] Request finished in 26.9351ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:57.3222059+07:00 0HMTP5R9FOGIG:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:38:57.3258950+07:00 0HMTP5R9FOGIG:0000000B [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:57.3291190+07:00 0HMTP5R9FOGIG:0000000B [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:57.3348835+07:00 0HMTP5R9FOGIG:0000000B [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:57.3399417+07:00 0HMTP5R9FOGIG:0000000B [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:57.3448590+07:00 0HMTP5R9FOGIG:0000000B [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 17.6205ms (afa2e885)
+2023-09-19T23:38:57.3516180+07:00 0HMTP5R9FOGIG:0000000B [INF] Request finished in 29.79ms 302  (791a596a)
+2023-09-19T23:38:57.3620998+07:00 0HMTP5R9FOGIG:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:38:57.3689443+07:00 0HMTP5R9FOGIG:0000000C [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:57.3734718+07:00 0HMTP5R9FOGIG:0000000C [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:57.3781468+07:00 0HMTP5R9FOGIG:0000000C [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:57.3862115+07:00 0HMTP5R9FOGIG:0000000C [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 17.8175ms (afa2e885)
+2023-09-19T23:38:57.3926658+07:00 0HMTP5R9FOGIG:0000000C [INF] Request finished in 31.1643ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:38:57.8643666+07:00 0HMTP5R9FOGIG:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:38:57.8719408+07:00 0HMTP5R9FOGIG:0000000D [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:38:57.8760648+07:00 0HMTP5R9FOGIG:0000000D [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:38:57.8799759+07:00 0HMTP5R9FOGIG:0000000D [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:38:57.8836800+07:00 0HMTP5R9FOGIG:0000000D [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:38:57.8869900+07:00 0HMTP5R9FOGIG:0000000D [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 19.0452ms (afa2e885)
+2023-09-19T23:38:57.8938813+07:00 0HMTP5R9FOGIG:0000000D [INF] Request finished in 28.7541ms 302  (791a596a)
+2023-09-19T23:38:57.9039623+07:00 0HMTP5R9FOGIG:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:38:57.9100747+07:00 0HMTP5R9FOGIG:0000000E [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:38:57.9138803+07:00 0HMTP5R9FOGIG:0000000E [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:38:57.9180998+07:00 0HMTP5R9FOGIG:0000000E [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:38:57.9242144+07:00 0HMTP5R9FOGIG:0000000E [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 15.07ms (afa2e885)
+2023-09-19T23:38:57.9294259+07:00 0HMTP5R9FOGIG:0000000E [INF] Request finished in 27.0972ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:39:17.3033001+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:39:17.8126825+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:39:17.8652040+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:39:17.8830551+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2023-09-19T23:39:17.9515179+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2023-09-19T23:39:17.9567031+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2023-09-19T23:39:18.0348837+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2023-09-19T23:39:18.0843118+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2023-09-19T23:39:18.0966655+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2023-09-19T23:39:18.1093071+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2023-09-19T23:39:18.1452157+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:39:18.1592261+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:39:18.1665630+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:39:19.3377937+07:00 0HMTP5RS2B85I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:39:19.8846243+07:00 0HMTP5RS2B85I:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:39:19.8934622+07:00 0HMTP5RS2B85I:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:39:19.9068329+07:00 0HMTP5RS2B85I:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:39:19.9354193+07:00 0HMTP5RS2B85I:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:39:19.9429180+07:00 0HMTP5RS2B85I:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 96.5091ms (afa2e885)
+2023-09-19T23:39:19.9978706+07:00 0HMTP5RS2B85I:00000001 [INF] Request finished in 704.9643ms 302  (791a596a)
+2023-09-19T23:39:20.0243723+07:00 0HMTP5RS2B85I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:39:20.1992555+07:00 0HMTP5RS2B85I:00000002 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:39:20.2388409+07:00 0HMTP5RS2B85I:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:39:26.3876961+07:00 0HMTP5RS2B85I:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:39:27.3593417+07:00 0HMTP5RS2B85I:00000002 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 7280.7306ms (afa2e885)
+2023-09-19T23:39:27.3804403+07:00 0HMTP5RS2B85I:00000002 [INF] Request finished in 7347.8085ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:39:36.4103043+07:00 0HMTP5RS2B85I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin   (ca22a1cb)
+2023-09-19T23:39:36.4222620+07:00 0HMTP5RS2B85I:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:39:36.4274162+07:00 0HMTP5RS2B85I:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:39:36.4329395+07:00 0HMTP5RS2B85I:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:39:36.4379596+07:00 0HMTP5RS2B85I:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:39:36.4418292+07:00 0HMTP5RS2B85I:00000003 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 21.764ms (afa2e885)
+2023-09-19T23:39:36.4503276+07:00 0HMTP5RS2B85I:00000003 [INF] Request finished in 36.0825ms 302  (791a596a)
+2023-09-19T23:39:36.4587827+07:00 0HMTP5RS2B85I:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2Fadmin   (ca22a1cb)
+2023-09-19T23:39:36.4700963+07:00 0HMTP5RS2B85I:00000004 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/admin"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:39:36.4750225+07:00 0HMTP5RS2B85I:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:39:36.4821363+07:00 0HMTP5RS2B85I:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:39:36.4924397+07:00 0HMTP5RS2B85I:00000004 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 25.3244ms (afa2e885)
+2023-09-19T23:39:36.4986908+07:00 0HMTP5RS2B85I:00000004 [INF] Request finished in 39.4668ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:42:36.8419264+07:00  [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:42:37.3809601+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:42:37.4294946+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:42:37.4474123+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2023-09-19T23:42:37.5174090+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2023-09-19T23:42:37.5233093+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2023-09-19T23:42:37.5973685+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2023-09-19T23:42:37.6556857+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2023-09-19T23:42:37.6685704+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2023-09-19T23:42:37.6828206+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2023-09-19T23:42:37.7189092+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:42:37.7307929+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:42:37.7377314+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2023-09-19T23:42:38.8939963+07:00 0HMTP5TNIROPD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:42:39.3927179+07:00 0HMTP5TNIROPD:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:42:39.4045468+07:00 0HMTP5TNIROPD:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:42:39.4188794+07:00 0HMTP5TNIROPD:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:42:39.4449653+07:00 0HMTP5TNIROPD:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:42:39.4536443+07:00 0HMTP5TNIROPD:00000001 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 96.8831ms (afa2e885)
+2023-09-19T23:42:39.5061043+07:00 0HMTP5TNIROPD:00000001 [INF] Request finished in 669.759ms 302  (791a596a)
+2023-09-19T23:42:39.5337953+07:00 0HMTP5TNIROPD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:42:39.6934811+07:00 0HMTP5TNIROPD:00000002 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:42:39.7328539+07:00 0HMTP5TNIROPD:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:42:45.6411039+07:00 0HMTP5TNIROPD:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:42:46.5331345+07:00 0HMTP5TNIROPD:00000002 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 6943.6963ms (afa2e885)
+2023-09-19T23:42:46.5466417+07:00 0HMTP5TNIROPD:00000002 [INF] Request finished in 7012.1803ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:42:48.5941753+07:00 0HMTP5TNIROPD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:42:48.5990111+07:00 0HMTP5TNIROPD:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:42:48.6030720+07:00 0HMTP5TNIROPD:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:42:48.6073489+07:00 0HMTP5TNIROPD:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:42:48.6109916+07:00 0HMTP5TNIROPD:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:42:48.6144783+07:00 0HMTP5TNIROPD:00000003 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 15.9319ms (afa2e885)
+2023-09-19T23:42:48.6207353+07:00 0HMTP5TNIROPD:00000003 [INF] Request finished in 25.7284ms 302  (791a596a)
+2023-09-19T23:42:48.6295678+07:00 0HMTP5TNIROPD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:42:48.6389910+07:00 0HMTP5TNIROPD:00000004 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:42:48.6440800+07:00 0HMTP5TNIROPD:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:42:48.6486648+07:00 0HMTP5TNIROPD:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:42:48.6581895+07:00 0HMTP5TNIROPD:00000004 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 21.5846ms (afa2e885)
+2023-09-19T23:42:48.6633628+07:00 0HMTP5TNIROPD:00000004 [INF] Request finished in 33.3452ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:42:49.8180183+07:00 0HMTP5TNIROPD:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/   (ca22a1cb)
+2023-09-19T23:42:49.8240302+07:00 0HMTP5TNIROPD:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2023-09-19T23:42:49.8273744+07:00 0HMTP5TNIROPD:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2023-09-19T23:42:49.8311163+07:00 0HMTP5TNIROPD:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2023-09-19T23:42:49.8345956+07:00 0HMTP5TNIROPD:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2023-09-19T23:42:49.8388553+07:00 0HMTP5TNIROPD:00000005 [INF] Executed action "TeduCoreApp.Controllers.HomeController.Index (TeduCoreApp)" in 16.3672ms (afa2e885)
+2023-09-19T23:42:49.8427733+07:00 0HMTP5TNIROPD:00000005 [INF] Request finished in 26.4321ms 302  (791a596a)
+2023-09-19T23:42:49.8480923+07:00 0HMTP5TNIROPD:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2023-09-19T23:42:49.8516484+07:00 0HMTP5TNIROPD:00000006 [INF] Executing action method "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:42:49.8575001+07:00 0HMTP5TNIROPD:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:42:49.8606574+07:00 0HMTP5TNIROPD:00000006 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2023-09-19T23:42:49.8662025+07:00 0HMTP5TNIROPD:00000006 [INF] Executed action "TeduCoreApp.Controllers.AccountController.Login (TeduCoreApp)" in 13.7767ms (afa2e885)
+2023-09-19T23:42:49.8733812+07:00 0HMTP5TNIROPD:00000006 [INF] Request finished in 21.3164ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:42:52.8483571+07:00 0HMTP5TNIROPD:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin   (ca22a1cb)
+2023-09-19T23:42:52.8598569+07:00 0HMTP5TNIROPD:00000007 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:42:53.0840984+07:00 0HMTP5TNIROPD:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2023-09-19T23:42:53.1169350+07:00 0HMTP5TNIROPD:00000007 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 254.6859ms (afa2e885)
+2023-09-19T23:42:53.1229271+07:00 0HMTP5TNIROPD:00000007 [INF] Request finished in 273.917ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:42:53.2569931+07:00 0HMTP5TNIROPD:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2023-09-19T23:42:53.2597643+07:00 0HMTP5TNIROPC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/controllers/login/index.js   (ca22a1cb)
+2023-09-19T23:42:53.2870868+07:00 0HMTP5TNIROPC:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2023-09-19T23:42:53.2889030+07:00 0HMTP5TNIROPD:00000008 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2023-09-19T23:42:53.3003242+07:00 0HMTP5TNIROPD:00000008 [INF] Request finished in 43.692ms 304 application/javascript (791a596a)
+2023-09-19T23:42:53.3041205+07:00 0HMTP5TNIROPC:00000001 [INF] Request finished in 42.3202ms 304 application/javascript (791a596a)
+2023-09-19T23:42:59.0567760+07:00 0HMTP5TNIROPD:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2023-09-19T23:42:59.1588042+07:00 0HMTP5TNIROPD:00000009 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:42:59.1787773+07:00 0HMTP5TNIROPD:00000009 [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:42:59.3133509+07:00 0HMTP5TNIROPD:00000009 [INF] Executed DbCommand ("56"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-09-19T23:42:59.4320813+07:00 0HMTP5TNIROPD:00000009 [WRN] Invalid password for user "6059a3fe-3a04-41de-88da-08dbb8f40941". (c2dce6c7)
+2023-09-19T23:42:59.4358141+07:00 0HMTP5TNIROPD:00000009 [WRN] User "6059a3fe-3a04-41de-88da-08dbb8f40941" failed to provide the correct password. (ec8d2479)
+2023-09-19T23:42:59.4635852+07:00 0HMTP5TNIROPD:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2023-09-19T23:42:59.5931967+07:00 0HMTP5TNIROPD:00000009 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 521.3048ms (afa2e885)
+2023-09-19T23:42:59.6062596+07:00 0HMTP5TNIROPD:00000009 [INF] Request finished in 553.7286ms 200 application/json; charset=utf-8 (791a596a)
+2023-09-19T23:43:10.1914006+07:00 0HMTP5TNIROPD:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:56852/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2023-09-19T23:43:10.1960302+07:00 0HMTP5TNIROPD:0000000A [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" with arguments (["TeduCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:43:10.1999561+07:00 0HMTP5TNIROPD:0000000A [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:43:10.2182263+07:00 0HMTP5TNIROPD:0000000A [INF] Executed DbCommand ("8"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-09-19T23:43:10.3332837+07:00 0HMTP5TNIROPD:0000000A [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2023-09-19T23:43:10.4044691+07:00 0HMTP5TNIROPD:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2023-09-19T23:43:10.4229592+07:00 0HMTP5TNIROPD:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-09-19T23:43:10.4474919+07:00 0HMTP5TNIROPD:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2023-09-19T23:43:10.4586542+07:00 0HMTP5TNIROPD:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2023-09-19T23:43:10.4842347+07:00 0HMTP5TNIROPD:0000000A [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2023-09-19T23:43:10.4916033+07:00 0HMTP5TNIROPD:0000000A [INF] User logged in. (fdce0db4)
+2023-09-19T23:43:10.4952925+07:00 0HMTP5TNIROPD:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2023-09-19T23:43:10.5033573+07:00 0HMTP5TNIROPD:0000000A [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Authen (TeduCoreApp)" in 303.9519ms (afa2e885)
+2023-09-19T23:43:10.5090151+07:00 0HMTP5TNIROPD:0000000A [INF] Request finished in 318.0402ms 200 application/json; charset=utf-8 (791a596a)
+2023-09-19T23:43:10.5259834+07:00 0HMTP5TNIROPD:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Home/Index   (ca22a1cb)
+2023-09-19T23:43:10.5495376+07:00 0HMTP5TNIROPD:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:10.5601661+07:00 0HMTP5TNIROPD:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-19T23:43:10.5656050+07:00 0HMTP5TNIROPD:0000000B [INF] Executing action method "TeduCoreApp.Area.Admin.Controllers.HomeController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:43:10.7026896+07:00 0HMTP5TNIROPD:0000000B [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2023-09-19T23:43:10.9484816+07:00 0HMTP5TNIROPD:0000000B [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:43:10.9944201+07:00 0HMTP5TNIROPD:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2023-09-19T23:43:11.2970874+07:00 0HMTP5TNIROPD:0000000B [INF] Executed action "TeduCoreApp.Area.Admin.Controllers.HomeController.Index (TeduCoreApp)" in 740.0253ms (afa2e885)
+2023-09-19T23:43:11.3059628+07:00 0HMTP5TNIROPD:0000000B [INF] Request finished in 781.661ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:43:11.3438158+07:00 0HMTP5TNIROPD:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2023-09-19T23:43:11.3461063+07:00 0HMTP5TNIROPC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/shared/tedu.js   (ca22a1cb)
+2023-09-19T23:43:11.3564009+07:00 0HMTP5TNIROPD:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:11.3575624+07:00 0HMTP5TNIROPC:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:11.3688393+07:00 0HMTP5TNIROPC:00000002 [INF] Request finished in 25.5922ms 404  (791a596a)
+2023-09-19T23:43:11.3705818+07:00 0HMTP5TNIROPD:0000000C [INF] Request finished in 28.5344ms 404  (791a596a)
+2023-09-19T23:43:16.3289827+07:00 0HMTP5TNIROPD:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:56852/admin/product/index   (ca22a1cb)
+2023-09-19T23:43:16.3324606+07:00 0HMTP5TNIROPD:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:16.3374610+07:00 0HMTP5TNIROPD:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-19T23:43:16.3406438+07:00 0HMTP5TNIROPD:0000000D [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.ProductController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:43:16.4450213+07:00 0HMTP5TNIROPD:0000000D [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2023-09-19T23:43:16.4538570+07:00 0HMTP5TNIROPD:0000000D [INF] Entity Framework Core "2.0.0-rtm-26452" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2023-09-19T23:43:16.4593346+07:00 0HMTP5TNIROPD:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2023-09-19T23:43:16.4656010+07:00 0HMTP5TNIROPD:0000000D [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.ProductController.Index (TeduCoreApp)" in 128.2802ms (afa2e885)
+2023-09-19T23:43:16.4712970+07:00 0HMTP5TNIROPD:0000000D [INF] Request finished in 142.4617ms 200 text/html; charset=utf-8 (791a596a)
+2023-09-19T23:43:16.4963126+07:00 0HMTP5TNIROPD:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:56852/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2023-09-19T23:43:16.4977734+07:00 0HMTP5TNIROPC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:56852/app/shared/tedu.js   (ca22a1cb)
+2023-09-19T23:43:16.5061874+07:00 0HMTP5TNIROPD:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:16.5088584+07:00 0HMTP5TNIROPC:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:16.5189404+07:00 0HMTP5TNIROPD:0000000E [INF] Request finished in 21.0708ms 404  (791a596a)
+2023-09-19T23:43:16.5209010+07:00 0HMTP5TNIROPC:00000003 [INF] Request finished in 23.67ms 404  (791a596a)
+2023-09-19T23:43:24.2597284+07:00 0HMTP5TNIROPC:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:56852/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2023-09-19T23:43:24.2652733+07:00 0HMTP5TNIROPC:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2023-09-19T23:43:24.2743931+07:00 0HMTP5TNIROPC:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2023-09-19T23:43:24.2776522+07:00 0HMTP5TNIROPC:00000004 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.AccountController.Logout (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:43:24.2879721+07:00 0HMTP5TNIROPC:00000004 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2023-09-19T23:43:24.2925235+07:00 0HMTP5TNIROPC:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2023-09-19T23:43:24.2964086+07:00 0HMTP5TNIROPC:00000004 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2023-09-19T23:43:24.3050210+07:00 0HMTP5TNIROPC:00000004 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2023-09-19T23:43:24.3088792+07:00 0HMTP5TNIROPC:00000004 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.AccountController.Logout (TeduCoreApp)" in 36.0973ms (afa2e885)
+2023-09-19T23:43:24.3157875+07:00 0HMTP5TNIROPC:00000004 [INF] Request finished in 54.2397ms 302  (791a596a)
+2023-09-19T23:43:24.3240054+07:00 0HMTP5TNIROPC:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:56852/Admin/Login/Index   (ca22a1cb)
+2023-09-19T23:43:24.3275168+07:00 0HMTP5TNIROPC:00000005 [INF] Executing action method "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2023-09-19T23:43:24.3307200+07:00 0HMTP5TNIROPC:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2023-09-19T23:43:24.3356173+07:00 0HMTP5TNIROPC:00000005 [INF] Executed action "TeduCoreApp.Areas.Admin.Controllers.LoginController.Index (TeduCoreApp)" in 7.0237ms (afa2e885)
+2023-09-19T23:43:24.3406662+07:00 0HMTP5TNIROPC:00000005 [INF] Request finished in 16.8619ms 200 text/html; charset=utf-8 (791a596a)
